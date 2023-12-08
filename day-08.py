@@ -15,7 +15,6 @@ with open('input-08.txt') as file:
 
 starts = [node for node in map.keys() if node[2] == 'A']
 goals = [node for node in map.keys() if node[2] == 'Z']
-
 steps = [traverse(start, goals) for start in starts]
 
 print(f'Part 1: {traverse("AAA", ["ZZZ"])}')
