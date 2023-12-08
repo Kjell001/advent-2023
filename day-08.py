@@ -10,7 +10,7 @@ def traverse(start, goals):
 
 with open('input-08.txt') as file:
 	dir = [s == 'R' for s in next(file).strip()]
-	next
+	next(file)
 	map = {line[:3]: (line[7:10], line[12:15]) for line in file}
 
 starts = [node for node in map.keys() if node[2] == 'A']
