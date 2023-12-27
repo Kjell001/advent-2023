@@ -12,7 +12,7 @@ def find_path(smin, smax):
 	while open:
 		cost, _, dir, coord = heappop(open)
 		if coord == finish: return cost
-		# Identical (dir, coord) found further down would be less efficienf
+		# Identical (dir, coord) found further down would be less efficient
 		if (dir, coord) in closed: continue
 		closed.add((dir, coord))
 		# Explore both left and right directions
